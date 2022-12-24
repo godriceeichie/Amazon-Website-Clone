@@ -116,7 +116,7 @@ ul{
     #notebook-header-section{
         display: block;
         padding-inline: .3rem;
-        padding-block: .7rem;
+        padding-block: .3rem;
     }
 
     .notebook-header-container{
@@ -153,5 +153,54 @@ ul{
         font-size: 12px;
         padding-bottom: 1px;
         color: white;
+    }
+
+    .notebook-searchbar-container{
+        height: 35px;
+        width: 45%;
+        /* background-color: red; */
+        padding: 0px 4px 0px 3px;
+        display: flex;
+    }
+
+    .select:not(option){
+        width: 15%;
+        height: 35px;
+        background-color: #efefef;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+
+    }
+
+    .all-text{
+        font-size: 12px;
+        color: white;
+    }
+
+    .select:not(option):focus{
+        /* border: 3px solid rgb(255,153,0); */
+        /* outline-offset: 3px; */
+        outline: 3px solid rgb(255,153,0);
+        margin-right: 3px;
+    }
+
+    .notebook-searchbar-container #search{
+        width: 75%;
+        outline: none;
+        padding-inline: .3rem;
+    }
+
+    .notebook-searchbar-container #search:focus .notebook-searchbar-container{
+        outline: 3px solid rgb(255,153,0);
+    }
+
+    .search-btn{
+        width: 10%;
+        background-color: #febd69;
+        border: 1px solid #febd69;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        padding-block: 0;
+        height: 35px;
     }
 }
