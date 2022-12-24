@@ -48,7 +48,6 @@ ul{
 
 .header-logo-container{
     display: flex;
-    /* align-items: center; */
     margin-top: .75rem;
 }
 
@@ -101,8 +100,58 @@ ul{
     font-size: 1.5rem;
 }
 
+#notebook-header-section{
+    display: none;
+}
+
 @media screen and (min-width: 680px){
     #mobile-header-container{
         display: none;
+    }
+
+    .header-logo-container{
+        margin-top: 0;
+    }
+
+    #notebook-header-section{
+        display: block;
+        padding-inline: .3rem;
+        padding-block: .7rem;
+    }
+
+    .notebook-header-container{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .delivering-location{
+        display: flex;
+        gap: .25rem;
+    }
+
+    .location-icon{
+        background-image: url(/img/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png);
+        background-position: -71px -378px;
+        width: 15px;
+        height: 18px;
+        margin-top: 8px;
+        align-self: flex-end;
+    }
+
+    .delivering-location-text-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .deliver-to-text{
+        font-size: 10px;
+        color: #ccc;
+    }
+
+    .country{
+        font-size: 12px;
+        padding-bottom: 1px;
+        color: white;
     }
 }
